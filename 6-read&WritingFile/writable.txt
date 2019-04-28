@@ -1,0 +1,3 @@
+hey ou to usando node para ler aquivos
+chupa sociedade
+node é muito rápido
