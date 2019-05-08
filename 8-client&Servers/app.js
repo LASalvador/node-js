@@ -2,7 +2,7 @@ var http =  require('http');
 
 
 var server = http.createServer(function(req, res){
-  console.log('request was made: ' + req.url);
+  console.log('request was made: ' + req.url);k
   res.writeHead(200, {'Content-type': 'text/plain'});
   res.end('Hey ninjas');
 });
