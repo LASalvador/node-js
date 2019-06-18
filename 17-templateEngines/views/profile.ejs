@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Better website</title>
+    <style media="screen">
+      body {
+        background: skyblue;
+        font-family: verdana;
+        color: #fff;
+        padding: 30px;
+      }
+      h1 {
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing:2px;
+        text-align: center;
+      }
+      p, li {
+        font-size: 16px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the profile of <%= person %> </h1>
+    <p><b>Age:</b> <%=data.age %></p>
+    <p><b>Job:</b> <%=data.job %></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <%data.hobbies.forEach(function(item){ %>
+        <li><%= item %></li>
+    <% });%>
+    </ul>
+  </body>
+</html>
